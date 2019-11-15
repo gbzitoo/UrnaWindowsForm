@@ -16,5 +16,10 @@ namespace UrnaWindowsForm
         {
             InitializeComponent();
         }
+
+        private void VotarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Test");
+        }
     }
 }
