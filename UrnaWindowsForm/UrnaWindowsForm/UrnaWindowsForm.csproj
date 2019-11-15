@@ -58,6 +58,48 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\DeputadoEstadual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\DeputadoEstadual.Designer.cs">
+      <DependentUpon>DeputadoEstadual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\DeputadoFederal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\DeputadoFederal.Designer.cs">
+      <DependentUpon>DeputadoFederal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\Governador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\Governador.Designer.cs">
+      <DependentUpon>Governador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\Prefeito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\Prefeito.Designer.cs">
+      <DependentUpon>Prefeito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\Presidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\Presidente.Designer.cs">
+      <DependentUpon>Presidente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\Senador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\Senador.Designer.cs">
+      <DependentUpon>Senador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\Vereador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CargoEleitoralInterface\Vereador.Designer.cs">
+      <DependentUpon>Vereador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\Ganhador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,12 +114,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Interface\Votar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Interface\Votar.Designer.cs">
-      <DependentUpon>Votar.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,9 +125,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\ListarCandidatos.resx">
       <DependentUpon>ListarCandidatos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Interface\Votar.resx">
-      <DependentUpon>Votar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

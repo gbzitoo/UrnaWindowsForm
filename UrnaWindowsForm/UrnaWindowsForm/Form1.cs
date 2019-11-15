@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UrnaWindowsForm.Interface.CargoEleitoralInterface;
 
 namespace UrnaWindowsForm
 {
@@ -15,7 +16,15 @@ namespace UrnaWindowsForm
         public Form _objCadastrarCandidato = new Form();
         public Form _objGanhador = new Form();
         public Form _objListarCandidato = new Form();
-        public Form _objVotar = new Form();
+
+        // Intarface Canditatos
+        public Form _objPresidente = new Form();
+        public Form _objGovernador = new Form();
+        public Form _objSenador = new Form();
+        public Form _objDeputadoFederal = new Form();
+        public Form _objDeputadoEstadual = new Form();
+        public Form _objPrefeito = new Form();
+        public Form _objVereador = new Form();
 
         public Form1()
         {
@@ -27,7 +36,7 @@ namespace UrnaWindowsForm
 
         private void VotarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Test");
+           
         }
 
         private void LimparUrnaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -49,6 +58,116 @@ namespace UrnaWindowsForm
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void ToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ToolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            _objPresidente?.Close();
+            _objPresidente = new Presidente
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objPresidente);
+            _objPresidente.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void ToolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            _objGovernador?.Close();
+            _objGovernador = new Governador
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objGovernador);
+            _objGovernador.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void ToolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            _objSenador?.Close();
+            _objSenador = new Senador
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objSenador);
+            _objSenador.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void ToolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            _objDeputadoFederal?.Close();
+            _objDeputadoFederal = new DeputadoFederal
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objDeputadoFederal);
+            _objDeputadoFederal.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void ToolStripMenuItem12_Click(object sender, EventArgs e)
+        {
+            _objDeputadoEstadual?.Close();
+            _objDeputadoEstadual = new DeputadoEstadual
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objDeputadoEstadual);
+            _objDeputadoEstadual.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void ToolStripMenuItem13_Click(object sender, EventArgs e)
+        {
+            _objPrefeito?.Close();
+            _objPrefeito = new Prefeito
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objPrefeito);
+            _objPrefeito.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void ToolStripMenuItem14_Click(object sender, EventArgs e)
+        {
+            _objVereador?.Close();
+            _objVereador = new Vereador
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objVereador);
+            _objVereador.Show();
+            P_Principal.Visible = true;
         }
     }
 }

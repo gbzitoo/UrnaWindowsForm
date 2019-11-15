@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UrnaWindowsForm
+namespace UrnaWindowsForm.Interface.CargoEleitoralInterface
 {
-    public partial class Votar : Form
+    public partial class Presidente : Form
     {
-        public Votar()
+        public Presidente()
         {
             InitializeComponent();
         }

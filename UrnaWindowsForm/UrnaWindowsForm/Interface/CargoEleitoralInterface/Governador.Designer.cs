@@ -1,6 +1,6 @@
-﻿namespace UrnaWindowsForm
+﻿namespace UrnaWindowsForm.Interface.CargoEleitoralInterface
 {
-    partial class Votar
+    partial class Governador
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Votar
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.MaximizeBox = false;
-            this.Name = "Votar";
-            this.Text = "Votar";
-            this.ResumeLayout(false);
-
+            this.Text = "Governador";
         }
 
         #endregion
