@@ -43,8 +43,6 @@
             this.prefeiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
             this.vereadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.limparUrnaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listarCandidatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -59,16 +57,25 @@
             this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarCandidatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ganhadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.limparUrnaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.P_Principal = new System.Windows.Forms.Panel();
+            this.telaInicialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.telaInicialToolStripMenuItem,
             this.cadastrarCandidatoToolStripMenuItem,
             this.toolStripMenuItem7,
-            this.limparUrnaToolStripMenuItem,
-            this.listarCandidatosToolStripMenuItem});
+            this.listarCandidatosToolStripMenuItem,
+            this.ganhadorToolStripMenuItem,
+            this.limparUrnaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -167,19 +174,6 @@
             this.vereadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.vereadorToolStripMenuItem.Text = "Vereador";
             // 
-            // limparUrnaToolStripMenuItem
-            // 
-            this.limparUrnaToolStripMenuItem.Name = "limparUrnaToolStripMenuItem";
-            this.limparUrnaToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
-            this.limparUrnaToolStripMenuItem.Text = "Limpar Urna";
-            this.limparUrnaToolStripMenuItem.Click += new System.EventHandler(this.LimparUrnaToolStripMenuItem_Click);
-            // 
-            // listarCandidatosToolStripMenuItem
-            // 
-            this.listarCandidatosToolStripMenuItem.Name = "listarCandidatosToolStripMenuItem";
-            this.listarCandidatosToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
-            this.listarCandidatosToolStripMenuItem.Text = "Listar Candidatos";
-            // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -272,15 +266,73 @@
             this.toolStripMenuItem14.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem14.Text = "Vereador";
             // 
+            // listarCandidatosToolStripMenuItem
+            // 
+            this.listarCandidatosToolStripMenuItem.Name = "listarCandidatosToolStripMenuItem";
+            this.listarCandidatosToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
+            this.listarCandidatosToolStripMenuItem.Text = "Listar Candidatos";
+            // 
+            // ganhadorToolStripMenuItem
+            // 
+            this.ganhadorToolStripMenuItem.Name = "ganhadorToolStripMenuItem";
+            this.ganhadorToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.ganhadorToolStripMenuItem.Text = "Ganhador";
+            // 
+            // limparUrnaToolStripMenuItem
+            // 
+            this.limparUrnaToolStripMenuItem.Name = "limparUrnaToolStripMenuItem";
+            this.limparUrnaToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.limparUrnaToolStripMenuItem.Text = "Limpar Urna";
+            this.limparUrnaToolStripMenuItem.Click += new System.EventHandler(this.LimparUrnaToolStripMenuItem_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(139, 89);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(527, 108);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Bem-Vindo";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(205, 211);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(381, 25);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Essa urna eletrônica e 100% funcional";
+            // 
+            // P_Principal
+            // 
+            this.P_Principal.Location = new System.Drawing.Point(0, 27);
+            this.P_Principal.Name = "P_Principal";
+            this.P_Principal.Size = new System.Drawing.Size(800, 424);
+            this.P_Principal.TabIndex = 3;
+            this.P_Principal.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // telaInicialToolStripMenuItem
+            // 
+            this.telaInicialToolStripMenuItem.Name = "telaInicialToolStripMenuItem";
+            this.telaInicialToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.telaInicialToolStripMenuItem.Text = "Tela Inicial";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.P_Principal);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -321,6 +373,11 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem13;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem ganhadorToolStripMenuItem;
+        private System.Windows.Forms.Panel P_Principal;
+        private System.Windows.Forms.ToolStripMenuItem telaInicialToolStripMenuItem;
     }
 }
 
