@@ -3,5 +3,6 @@ idCandidato INT not null AUTO_INCREMENT,
 PRIMARY KEY (idCandidato),
 cargoPolitico varchar(50),
 numero int,
-nome varchar(80)
+nome varchar(80),
+votos int
 )
