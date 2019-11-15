@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UrnaWindowsForm.Funcoes;
 
 namespace UrnaWindowsForm.Interface.CadastroCargoInterface
 {
@@ -15,6 +16,12 @@ namespace UrnaWindowsForm.Interface.CadastroCargoInterface
         public CGovernador()
         {
             InitializeComponent();
+        }
+
+        private void BntCadastrarPresidente_Click(object sender, EventArgs e)
+        {
+            Inserir inserir = new Inserir();
+            inserir.Cadastrar(2, Convert.ToInt32(txtNumGovernador.Text), txtNomeGovernador.Text);
         }
     }
 }

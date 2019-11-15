@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UrnaWindowsForm.Interface;
 using UrnaWindowsForm.Interface.CadastroCargoInterface;
 using UrnaWindowsForm.Interface.CargoEleitoralInterface;
 
@@ -14,7 +15,6 @@ namespace UrnaWindowsForm
 {
     public partial class Form1 : Form
     {
-        public Form _objCadastrarCandidato = new Form();
         public Form _objGanhador = new Form();
         public Form _objListarCandidato = new Form();
 
@@ -40,6 +40,7 @@ namespace UrnaWindowsForm
         {
             InitializeComponent();
             this.Text = "Urna Eletrônica";
+            P_Principal.Visible = false;
         }
 
         private void LimparUrnaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -280,6 +281,8 @@ namespace UrnaWindowsForm
 
         private void TelaInicialToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            P_Principal.Visible = false;
+
             //Fechando Interface Votar
             _objPresidente?.Close();
             _objGovernador?.Close();
@@ -297,6 +300,40 @@ namespace UrnaWindowsForm
             _objCDeputadoEstadual?.Close();
             _objCPrefeito?.Close();
             _objCVereador?.Close();
+
+            //UTILITARIOS
+            _objListarCandidato?.Close();
+            _objGanhador?.Close();
+        }
+
+        private void ListarCandidatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _objListarCandidato?.Close();
+            _objListarCandidato = new ListarCandidatos
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objListarCandidato);
+            _objListarCandidato.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void GanhadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _objGanhador?.Close();
+            _objGanhador = new Ganhador
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objGanhador);
+            _objGanhador.Show();
+            P_Principal.Visible = true;
         }
     }
 }

@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,18 +50,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interface\CadastrarCandidato.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Interface\CadastrarCandidato.Designer.cs">
-      <DependentUpon>CadastrarCandidato.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Cargos\CargoEnum.cs" />
+    <Compile Include="Cargos\Retorno.cs" />
+    <Compile Include="Conexao\ConexaoMySql.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Funcoes\Inserir.cs" />
     <Compile Include="Interface\CadastroCargoInterface\CDeputadoEstadual.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,11 +161,26 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Interface\CadastrarCandidato.resx">
-      <DependentUpon>CadastrarCandidato.cs</DependentUpon>
+    <EmbeddedResource Include="Interface\CadastroCargoInterface\CDeputadoEstadual.resx">
+      <DependentUpon>CDeputadoEstadual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CadastroCargoInterface\CDeputadoFederal.resx">
+      <DependentUpon>CDeputadoFederal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CadastroCargoInterface\CGovernador.resx">
+      <DependentUpon>CGovernador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CadastroCargoInterface\CPrefeito.resx">
+      <DependentUpon>CPrefeito.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\CadastroCargoInterface\CPresidente.resx">
       <DependentUpon>CPresidente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CadastroCargoInterface\CSenador.resx">
+      <DependentUpon>CSenador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CadastroCargoInterface\CVereador.resx">
+      <DependentUpon>CVereador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interface\CargoEleitoralInterface\Presidente.resx">
       <DependentUpon>Presidente.cs</DependentUpon>

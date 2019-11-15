@@ -112,79 +112,79 @@
             // presidenteToolStripMenuItem
             // 
             this.presidenteToolStripMenuItem.Name = "presidenteToolStripMenuItem";
-            this.presidenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.presidenteToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.presidenteToolStripMenuItem.Text = "Presidente";
             this.presidenteToolStripMenuItem.Click += new System.EventHandler(this.PresidenteToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(170, 6);
             // 
             // governadorToolStripMenuItem
             // 
             this.governadorToolStripMenuItem.Name = "governadorToolStripMenuItem";
-            this.governadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.governadorToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.governadorToolStripMenuItem.Text = "Governador";
             this.governadorToolStripMenuItem.Click += new System.EventHandler(this.GovernadorToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(170, 6);
             // 
             // senadorToolStripMenuItem
             // 
             this.senadorToolStripMenuItem.Name = "senadorToolStripMenuItem";
-            this.senadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.senadorToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.senadorToolStripMenuItem.Text = "Senador";
             this.senadorToolStripMenuItem.Click += new System.EventHandler(this.SenadorToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(170, 6);
             // 
             // deputadoFederalToolStripMenuItem
             // 
             this.deputadoFederalToolStripMenuItem.Name = "deputadoFederalToolStripMenuItem";
-            this.deputadoFederalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deputadoFederalToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.deputadoFederalToolStripMenuItem.Text = "Deputado Federal";
             this.deputadoFederalToolStripMenuItem.Click += new System.EventHandler(this.DeputadoFederalToolStripMenuItem_Click);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(170, 6);
             // 
             // deputadoEstadualToolStripMenuItem
             // 
             this.deputadoEstadualToolStripMenuItem.Name = "deputadoEstadualToolStripMenuItem";
-            this.deputadoEstadualToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deputadoEstadualToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.deputadoEstadualToolStripMenuItem.Text = "Deputado Estadual";
             this.deputadoEstadualToolStripMenuItem.Click += new System.EventHandler(this.DeputadoEstadualToolStripMenuItem_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(170, 6);
             // 
             // prefeiroToolStripMenuItem
             // 
             this.prefeiroToolStripMenuItem.Name = "prefeiroToolStripMenuItem";
-            this.prefeiroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.prefeiroToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.prefeiroToolStripMenuItem.Text = "Prefeito";
             this.prefeiroToolStripMenuItem.Click += new System.EventHandler(this.PrefeiroToolStripMenuItem_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(170, 6);
             // 
             // vereadorToolStripMenuItem
             // 
             this.vereadorToolStripMenuItem.Name = "vereadorToolStripMenuItem";
-            this.vereadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.vereadorToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.vereadorToolStripMenuItem.Text = "Vereador";
             this.vereadorToolStripMenuItem.Click += new System.EventHandler(this.VereadorToolStripMenuItem_Click);
             // 
@@ -212,79 +212,79 @@
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(173, 22);
             this.toolStripMenuItem8.Text = "Presidente";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.ToolStripMenuItem8_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(170, 6);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(173, 22);
             this.toolStripMenuItem9.Text = "Governador";
             this.toolStripMenuItem9.Click += new System.EventHandler(this.ToolStripMenuItem9_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(170, 6);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(173, 22);
             this.toolStripMenuItem10.Text = "Senador";
             this.toolStripMenuItem10.Click += new System.EventHandler(this.ToolStripMenuItem10_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(170, 6);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(173, 22);
             this.toolStripMenuItem11.Text = "Deputado Federal";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.ToolStripMenuItem11_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(170, 6);
             // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(173, 22);
             this.toolStripMenuItem12.Text = "Deputado Estadual";
             this.toolStripMenuItem12.Click += new System.EventHandler(this.ToolStripMenuItem12_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(170, 6);
             // 
             // toolStripMenuItem13
             // 
             this.toolStripMenuItem13.Name = "toolStripMenuItem13";
-            this.toolStripMenuItem13.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem13.Size = new System.Drawing.Size(173, 22);
             this.toolStripMenuItem13.Text = "Prefeito";
             this.toolStripMenuItem13.Click += new System.EventHandler(this.ToolStripMenuItem13_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(170, 6);
             // 
             // toolStripMenuItem14
             // 
             this.toolStripMenuItem14.Name = "toolStripMenuItem14";
-            this.toolStripMenuItem14.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem14.Size = new System.Drawing.Size(173, 22);
             this.toolStripMenuItem14.Text = "Vereador";
             this.toolStripMenuItem14.Click += new System.EventHandler(this.ToolStripMenuItem14_Click);
             // 
@@ -293,12 +293,14 @@
             this.listarCandidatosToolStripMenuItem.Name = "listarCandidatosToolStripMenuItem";
             this.listarCandidatosToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
             this.listarCandidatosToolStripMenuItem.Text = "Listar Candidatos";
+            this.listarCandidatosToolStripMenuItem.Click += new System.EventHandler(this.ListarCandidatosToolStripMenuItem_Click);
             // 
             // ganhadorToolStripMenuItem
             // 
             this.ganhadorToolStripMenuItem.Name = "ganhadorToolStripMenuItem";
             this.ganhadorToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.ganhadorToolStripMenuItem.Text = "Ganhador";
+            this.ganhadorToolStripMenuItem.Click += new System.EventHandler(this.GanhadorToolStripMenuItem_Click);
             // 
             // limparUrnaToolStripMenuItem
             // 

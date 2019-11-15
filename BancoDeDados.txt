@@ -1,0 +1,7 @@
+create table candidato(
+idCandidato INT not null AUTO_INCREMENT,
+PRIMARY KEY (idCandidato),
+cargoPolitico varchar(50),
+numero int,
+nome varchar(80)
+)
