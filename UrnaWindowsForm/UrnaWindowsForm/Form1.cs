@@ -21,5 +21,16 @@ namespace UrnaWindowsForm
         {
             MessageBox.Show("Test");
         }
+
+        private void LimparUrnaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Implementar o sistema de pergunta.
+            //Perguntar se o usuário quer realmente limpar a urna.
+
+            //Exemplo: 
+            // Você Realmente deseja limpar essa urna? (s/n)
+            // se o usuario botar s, o programa irá exluir tudo, caso o usuario bote n o programa ira voltar para pagina inicial.
+            MessageBox.Show("Você limpou sua urma, todos os candidatos e votos cadastrados foram excluidos.");
+        }
     }
 }

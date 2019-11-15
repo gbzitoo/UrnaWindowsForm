@@ -43,8 +43,22 @@
             this.prefeiroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
             this.vereadorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.votarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.limparUrnaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listarCandidatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,8 +66,9 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cadastrarCandidatoToolStripMenuItem,
-            this.votarToolStripMenuItem,
-            this.limparUrnaToolStripMenuItem});
+            this.toolStripMenuItem7,
+            this.limparUrnaToolStripMenuItem,
+            this.listarCandidatosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -152,18 +167,110 @@
             this.vereadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.vereadorToolStripMenuItem.Text = "Vereador";
             // 
-            // votarToolStripMenuItem
-            // 
-            this.votarToolStripMenuItem.Name = "votarToolStripMenuItem";
-            this.votarToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.votarToolStripMenuItem.Text = "Votar";
-            this.votarToolStripMenuItem.Click += new System.EventHandler(this.VotarToolStripMenuItem_Click);
-            // 
             // limparUrnaToolStripMenuItem
             // 
             this.limparUrnaToolStripMenuItem.Name = "limparUrnaToolStripMenuItem";
             this.limparUrnaToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.limparUrnaToolStripMenuItem.Text = "Limpar Urna";
+            this.limparUrnaToolStripMenuItem.Click += new System.EventHandler(this.LimparUrnaToolStripMenuItem_Click);
+            // 
+            // listarCandidatosToolStripMenuItem
+            // 
+            this.listarCandidatosToolStripMenuItem.Name = "listarCandidatosToolStripMenuItem";
+            this.listarCandidatosToolStripMenuItem.Size = new System.Drawing.Size(110, 20);
+            this.listarCandidatosToolStripMenuItem.Text = "Listar Candidatos";
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem8,
+            this.toolStripSeparator1,
+            this.toolStripMenuItem9,
+            this.toolStripSeparator2,
+            this.toolStripMenuItem10,
+            this.toolStripSeparator3,
+            this.toolStripMenuItem11,
+            this.toolStripSeparator4,
+            this.toolStripMenuItem12,
+            this.toolStripSeparator5,
+            this.toolStripMenuItem13,
+            this.toolStripSeparator6,
+            this.toolStripMenuItem14});
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(46, 20);
+            this.toolStripMenuItem7.Text = "Votar";
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem8.Text = "Presidente";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem9.Text = "Governador";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            // 
+            // toolStripMenuItem10
+            // 
+            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem10.Text = "Senador";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            // 
+            // toolStripMenuItem11
+            // 
+            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem11.Text = "Deputado Federal";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
+            // 
+            // toolStripMenuItem12
+            // 
+            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem12.Text = "Deputado Estadual";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
+            // 
+            // toolStripMenuItem13
+            // 
+            this.toolStripMenuItem13.Name = "toolStripMenuItem13";
+            this.toolStripMenuItem13.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem13.Text = "Prefeito";
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
+            // 
+            // toolStripMenuItem14
+            // 
+            this.toolStripMenuItem14.Name = "toolStripMenuItem14";
+            this.toolStripMenuItem14.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem14.Text = "Vereador";
             // 
             // Form1
             // 
@@ -198,8 +305,22 @@
         private System.Windows.Forms.ToolStripMenuItem prefeiroToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem vereadorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem votarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem limparUrnaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listarCandidatosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem9;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem11;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem13;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
     }
 }
 
