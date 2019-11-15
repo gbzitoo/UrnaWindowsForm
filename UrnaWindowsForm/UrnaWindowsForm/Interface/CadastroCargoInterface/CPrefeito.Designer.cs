@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNomePrefeito = new System.Windows.Forms.TextBox();
+            this.txtNumPrefeito = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bntCadastrarPresidente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox2
+            // txtNomePrefeito
             // 
-            this.textBox2.Location = new System.Drawing.Point(330, 253);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(267, 20);
-            this.textBox2.TabIndex = 23;
+            this.txtNomePrefeito.Location = new System.Drawing.Point(330, 253);
+            this.txtNomePrefeito.Name = "txtNomePrefeito";
+            this.txtNomePrefeito.Size = new System.Drawing.Size(267, 20);
+            this.txtNomePrefeito.TabIndex = 23;
             // 
-            // textBox1
+            // txtNumPrefeito
             // 
-            this.textBox1.Location = new System.Drawing.Point(346, 203);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(62, 20);
-            this.textBox1.TabIndex = 22;
+            this.txtNumPrefeito.Location = new System.Drawing.Point(346, 203);
+            this.txtNumPrefeito.Name = "txtNumPrefeito";
+            this.txtNumPrefeito.Size = new System.Drawing.Size(62, 20);
+            this.txtNumPrefeito.TabIndex = 22;
             // 
             // label3
             // 
@@ -89,14 +89,15 @@
             this.bntCadastrarPresidente.TabIndex = 18;
             this.bntCadastrarPresidente.Text = "Cadastrar";
             this.bntCadastrarPresidente.UseVisualStyleBackColor = true;
+            this.bntCadastrarPresidente.Click += new System.EventHandler(this.BntCadastrarPresidente_Click);
             // 
             // CPrefeito
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNomePrefeito);
+            this.Controls.Add(this.txtNumPrefeito);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -110,8 +111,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNomePrefeito;
+        private System.Windows.Forms.TextBox txtNumPrefeito;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

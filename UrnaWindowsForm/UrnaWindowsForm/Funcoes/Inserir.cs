@@ -31,7 +31,7 @@ namespace UrnaWindowsForm.Funcoes
             {
                 sqlcon.Open();
                 comando.ExecuteNonQuery();
-                MessageBox.Show("Candidato Cadastrado!!");
+                MessageBox.Show(r.recebe(cargoPolitico) +" Cadastrado!!");
             }
             catch (Exception ex)
             {
