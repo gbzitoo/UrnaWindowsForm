@@ -58,6 +58,48 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CDeputadoEstadual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CDeputadoEstadual.Designer.cs">
+      <DependentUpon>CDeputadoEstadual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CDeputadoFederal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CDeputadoFederal.Designer.cs">
+      <DependentUpon>CDeputadoFederal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CGovernador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CGovernador.Designer.cs">
+      <DependentUpon>CGovernador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CPrefeito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CPrefeito.Designer.cs">
+      <DependentUpon>CPrefeito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CPresidente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CPresidente.Designer.cs">
+      <DependentUpon>CPresidente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CSenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CSenador.Designer.cs">
+      <DependentUpon>CSenador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CVereador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\CadastroCargoInterface\CVereador.Designer.cs">
+      <DependentUpon>CVereador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\CargoEleitoralInterface\DeputadoEstadual.cs">
       <SubType>Form</SubType>
     </Compile>
