@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.telaInicialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastrarCandidatoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.presidenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
@@ -63,7 +64,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.P_Principal = new System.Windows.Forms.Panel();
-            this.telaInicialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +81,13 @@
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // telaInicialToolStripMenuItem
+            // 
+            this.telaInicialToolStripMenuItem.Name = "telaInicialToolStripMenuItem";
+            this.telaInicialToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
+            this.telaInicialToolStripMenuItem.Text = "Tela Inicial";
+            this.telaInicialToolStripMenuItem.Click += new System.EventHandler(this.TelaInicialToolStripMenuItem_Click);
             // 
             // cadastrarCandidatoToolStripMenuItem
             // 
@@ -107,6 +114,7 @@
             this.presidenteToolStripMenuItem.Name = "presidenteToolStripMenuItem";
             this.presidenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.presidenteToolStripMenuItem.Text = "Presidente";
+            this.presidenteToolStripMenuItem.Click += new System.EventHandler(this.PresidenteToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -118,6 +126,7 @@
             this.governadorToolStripMenuItem.Name = "governadorToolStripMenuItem";
             this.governadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.governadorToolStripMenuItem.Text = "Governador";
+            this.governadorToolStripMenuItem.Click += new System.EventHandler(this.GovernadorToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -129,6 +138,7 @@
             this.senadorToolStripMenuItem.Name = "senadorToolStripMenuItem";
             this.senadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.senadorToolStripMenuItem.Text = "Senador";
+            this.senadorToolStripMenuItem.Click += new System.EventHandler(this.SenadorToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -140,6 +150,7 @@
             this.deputadoFederalToolStripMenuItem.Name = "deputadoFederalToolStripMenuItem";
             this.deputadoFederalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.deputadoFederalToolStripMenuItem.Text = "Deputado Federal";
+            this.deputadoFederalToolStripMenuItem.Click += new System.EventHandler(this.DeputadoFederalToolStripMenuItem_Click);
             // 
             // toolStripMenuItem4
             // 
@@ -151,6 +162,7 @@
             this.deputadoEstadualToolStripMenuItem.Name = "deputadoEstadualToolStripMenuItem";
             this.deputadoEstadualToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.deputadoEstadualToolStripMenuItem.Text = "Deputado Estadual";
+            this.deputadoEstadualToolStripMenuItem.Click += new System.EventHandler(this.DeputadoEstadualToolStripMenuItem_Click);
             // 
             // toolStripMenuItem5
             // 
@@ -162,6 +174,7 @@
             this.prefeiroToolStripMenuItem.Name = "prefeiroToolStripMenuItem";
             this.prefeiroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.prefeiroToolStripMenuItem.Text = "Prefeito";
+            this.prefeiroToolStripMenuItem.Click += new System.EventHandler(this.PrefeiroToolStripMenuItem_Click);
             // 
             // toolStripMenuItem6
             // 
@@ -173,6 +186,7 @@
             this.vereadorToolStripMenuItem.Name = "vereadorToolStripMenuItem";
             this.vereadorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.vereadorToolStripMenuItem.Text = "Vereador";
+            this.vereadorToolStripMenuItem.Click += new System.EventHandler(this.VereadorToolStripMenuItem_Click);
             // 
             // toolStripMenuItem7
             // 
@@ -320,12 +334,6 @@
             this.P_Principal.Size = new System.Drawing.Size(800, 424);
             this.P_Principal.TabIndex = 3;
             this.P_Principal.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
-            // 
-            // telaInicialToolStripMenuItem
-            // 
-            this.telaInicialToolStripMenuItem.Name = "telaInicialToolStripMenuItem";
-            this.telaInicialToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
-            this.telaInicialToolStripMenuItem.Text = "Tela Inicial";
             // 
             // Form1
             // 

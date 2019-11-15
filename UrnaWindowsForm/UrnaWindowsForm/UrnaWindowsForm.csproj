@@ -162,6 +162,12 @@
     <EmbeddedResource Include="Interface\CadastrarCandidato.resx">
       <DependentUpon>CadastrarCandidato.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CadastroCargoInterface\CPresidente.resx">
+      <DependentUpon>CPresidente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CargoEleitoralInterface\Presidente.resx">
+      <DependentUpon>Presidente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interface\Ganhador.resx">
       <DependentUpon>Ganhador.cs</DependentUpon>
     </EmbeddedResource>

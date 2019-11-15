@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UrnaWindowsForm.Interface.CadastroCargoInterface;
 using UrnaWindowsForm.Interface.CargoEleitoralInterface;
 
 namespace UrnaWindowsForm
@@ -26,17 +27,19 @@ namespace UrnaWindowsForm
         public Form _objPrefeito = new Form();
         public Form _objVereador = new Form();
 
+        //Interface Cadastro de Candidato
+        public Form _objCPresidente = new Form();
+        public Form _objCGovernador = new Form();
+        public Form _objCSenador = new Form();
+        public Form _objCDeputadoFederal = new Form();
+        public Form _objCDeputadoEstadual = new Form();
+        public Form _objCPrefeito = new Form();
+        public Form _objCVereador = new Form();
+
         public Form1()
         {
             InitializeComponent();
             this.Text = "Urna Eletrônica";
-
-        }
-
-
-        private void VotarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
         }
 
         private void LimparUrnaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -168,6 +171,132 @@ namespace UrnaWindowsForm
             P_Principal.Controls.Add(_objVereador);
             _objVereador.Show();
             P_Principal.Visible = true;
+        }
+
+        private void PresidenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _objCPresidente?.Close();
+            _objCPresidente = new CPresidente
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objCPresidente);
+            _objCPresidente.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void GovernadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _objCGovernador?.Close();
+            _objCGovernador = new CGovernador
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objCGovernador);
+            _objCGovernador.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void SenadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _objCSenador?.Close();
+            _objCSenador = new CSenador
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objCSenador);
+            _objCSenador.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void DeputadoFederalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _objCDeputadoFederal?.Close();
+            _objCDeputadoFederal = new CDeputadoFederal
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objCDeputadoFederal);
+            _objCDeputadoFederal.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void DeputadoEstadualToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _objCDeputadoEstadual?.Close();
+            _objCDeputadoEstadual = new CDeputadoEstadual
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objCDeputadoEstadual);
+            _objCDeputadoEstadual.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void PrefeiroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _objCPrefeito?.Close();
+            _objCPrefeito = new CPrefeito
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objCPrefeito);
+            _objCPrefeito.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void VereadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _objCVereador?.Close();
+            _objCVereador = new CVereador
+            {
+                TopLevel = false,
+                FormBorderStyle = FormBorderStyle.None,
+                Dock = DockStyle.Fill
+            };
+
+            P_Principal.Controls.Add(_objCVereador);
+            _objCVereador.Show();
+            P_Principal.Visible = true;
+        }
+
+        private void TelaInicialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Fechando Interface Votar
+            _objPresidente?.Close();
+            _objGovernador?.Close();
+            _objSenador?.Close();
+            _objDeputadoFederal?.Close();
+            _objDeputadoEstadual?.Close();
+            _objPrefeito?.Close();
+            _objVereador?.Close();
+
+            //Fechando Interface Cadastrar
+            _objCPresidente?.Close();
+            _objCGovernador?.Close();
+            _objCSenador?.Close();
+            _objCDeputadoFederal?.Close();
+            _objCDeputadoEstadual?.Close();
+            _objCPrefeito?.Close();
+            _objCVereador?.Close();
         }
     }
 }
