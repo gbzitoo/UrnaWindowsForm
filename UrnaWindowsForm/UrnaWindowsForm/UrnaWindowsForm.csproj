@@ -60,6 +60,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Funcoes\Inserir.cs" />
+    <Compile Include="Funcoes\PesquisarCandidato.cs" />
+    <Compile Include="Funcoes\Votando.cs" />
+    <Compile Include="Funcoes\Votar.cs" />
     <Compile Include="Interface\CadastroCargoInterface\CDeputadoEstadual.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +185,9 @@
     <EmbeddedResource Include="Interface\CadastroCargoInterface\CVereador.resx">
       <DependentUpon>CVereador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interface\CargoEleitoralInterface\Governador.resx">
+      <DependentUpon>Governador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interface\CargoEleitoralInterface\Presidente.resx">
       <DependentUpon>Presidente.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +205,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -213,6 +220,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Imagem\candidata.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

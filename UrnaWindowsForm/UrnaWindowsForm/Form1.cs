@@ -335,5 +335,10 @@ namespace UrnaWindowsForm
             _objGanhador.Show();
             P_Principal.Visible = true;
         }
+
+        public void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
