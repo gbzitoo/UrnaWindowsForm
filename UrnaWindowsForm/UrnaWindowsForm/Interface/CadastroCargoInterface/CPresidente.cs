@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UrnaWindowsForm.Consultas;
 using UrnaWindowsForm.Funcoes;
 
 namespace UrnaWindowsForm.Interface.CadastroCargoInterface
@@ -20,8 +21,9 @@ namespace UrnaWindowsForm.Interface.CadastroCargoInterface
 
         private void BntCadastrarPresidente_Click(object sender, EventArgs e)
         {
-            Inserir inserir = new Inserir();
-            inserir.Cadastrar(1, Convert.ToInt32(txtNumPresidente.Text), txtNomePresidente.Text);
+            InserirPresidente inserirPresidente = new InserirPresidente();
+            Presidente pre = new Presidente();
+            inserirPresidente.CadastrarPresidente(1, Convert.ToInt32(txtNumPresidente.Text), txtNomePresidente.Text, pre.ConsultaPresidente());
         }
     }
 }

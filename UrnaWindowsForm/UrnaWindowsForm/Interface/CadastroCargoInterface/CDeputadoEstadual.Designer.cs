@@ -34,6 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bntCadastrarPresidente = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtNomeDeputadoEstadual
@@ -83,7 +85,7 @@
             // bntCadastrarPresidente
             // 
             this.bntCadastrarPresidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntCadastrarPresidente.Location = new System.Drawing.Point(297, 326);
+            this.bntCadastrarPresidente.Location = new System.Drawing.Point(330, 338);
             this.bntCadastrarPresidente.Name = "bntCadastrarPresidente";
             this.bntCadastrarPresidente.Size = new System.Drawing.Size(111, 36);
             this.bntCadastrarPresidente.TabIndex = 18;
@@ -91,11 +93,43 @@
             this.bntCadastrarPresidente.UseVisualStyleBackColor = true;
             this.bntCadastrarPresidente.Click += new System.EventHandler(this.BntCadastrarPresidente_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(157, 291);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 20);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Estado: ";
+            // 
+            // ComboBox
+            // 
+            this.ComboBox.FormattingEnabled = true;
+            this.ComboBox.Items.AddRange(new object[] {
+            "RJ",
+            "SP",
+            "MG",
+            "ES",
+            "BA",
+            "AM",
+            "AC",
+            "AL",
+            "GO",
+            "MS",
+            "DF"});
+            this.ComboBox.Location = new System.Drawing.Point(239, 293);
+            this.ComboBox.Name = "ComboBox";
+            this.ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.ComboBox.TabIndex = 24;
+            // 
             // CDeputadoEstadual
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.ComboBox);
             this.Controls.Add(this.txtNomeDeputadoEstadual);
             this.Controls.Add(this.txtNumDeputadoEstadual);
             this.Controls.Add(this.label3);
@@ -117,5 +151,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button bntCadastrarPresidente;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox ComboBox;
     }
 }

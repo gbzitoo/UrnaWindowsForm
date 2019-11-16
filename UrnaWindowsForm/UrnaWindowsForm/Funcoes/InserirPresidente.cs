@@ -10,7 +10,7 @@ using UrnaWindowsForm.Consultas;
 
 namespace UrnaWindowsForm.Funcoes
 {
-    public class Inserir
+    public class InserirPresidente
     {
 
 
@@ -19,7 +19,7 @@ namespace UrnaWindowsForm.Funcoes
         UrnaWindowsForm.Conexao.ConexaoMySql c = new UrnaWindowsForm.Conexao.ConexaoMySql();
         Retorno r = new Retorno();
 
-        public void Cadastrar(int cargoPolitico, int numero, string nome, string estado,string Consulta)
+        public void CadastrarPresidente(int cargoPolitico, int numero, string nome,string Consulta)
         {
 
             sqlcon = new MySql.Data.MySqlClient.MySqlConnection(c.Conn());
@@ -28,7 +28,6 @@ namespace UrnaWindowsForm.Funcoes
             comando.Parameters.Add("@cargoPolitico", MySqlDbType.VarChar).Value = r.recebe(cargoPolitico);
             comando.Parameters.Add("@numero", MySqlDbType.Int32).Value = numero;
             comando.Parameters.Add("@nome", MySqlDbType.VarChar).Value = nome;
-            comando.Parameters.Add("@estado", MySqlDbType.VarChar).Value = estado;
 
             try
             {

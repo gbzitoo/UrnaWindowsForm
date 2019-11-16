@@ -53,12 +53,20 @@
     <Compile Include="Cargos\CargoEnum.cs" />
     <Compile Include="Cargos\Retorno.cs" />
     <Compile Include="Conexao\ConexaoMySql.cs" />
+    <Compile Include="Consultas\DeputadoEstadual.cs" />
+    <Compile Include="Consultas\DeputadoFederal.cs" />
+    <Compile Include="Consultas\Governador.cs" />
+    <Compile Include="Consultas\Prefeito.cs" />
+    <Compile Include="Consultas\Presidente.cs" />
+    <Compile Include="Consultas\Senador.cs" />
+    <Compile Include="Consultas\Vereador.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Funcoes\InserirPresidente.cs" />
     <Compile Include="Funcoes\Inserir.cs" />
     <Compile Include="Funcoes\PesquisarCandidato.cs" />
     <Compile Include="Funcoes\Votando.cs" />

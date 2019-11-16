@@ -6,3 +6,74 @@ numero int not null,
 nome varchar(80) not null ,
 votos int DEFAULT 0 
 )
+
+create table presidente(
+idPresidente INT not null AUTO_INCREMENT,
+PRIMARY KEY (idPresidente),
+cargoPolitico varchar(50),
+numero int not null,
+nome varchar(80) not null ,
+votos int DEFAULT 0
+)
+
+create table governador(
+idGovernador INT not null AUTO_INCREMENT,
+PRIMARY KEY (idGovernador),
+cargoPolitico varchar(50),
+numero int not null,
+nome varchar(80) not null ,
+estado varchar(2),
+votos int DEFAULT 0
+)
+
+create table senador(
+idSenador INT not null AUTO_INCREMENT,
+PRIMARY KEY (idSenador),
+cargoPolitico varchar(50),
+numero int not null,
+nome varchar(80) not null ,
+estado varchar(2),
+votos int DEFAULT 0
+)
+
+create table deputadofederal(
+idDeputadoFederal INT not null AUTO_INCREMENT,
+PRIMARY KEY (idDeputadoFederal),
+cargoPolitico varchar(50),
+numero int not null,
+nome varchar(80) not null ,
+estado varchar(2),
+votos int DEFAULT 0
+)
+
+
+create table deputadoestadual(
+idDeputadoEstadual INT not null AUTO_INCREMENT,
+PRIMARY KEY (idCandidato),
+cargoPolitico varchar(50),
+numero int not null,
+nome varchar(80) not null ,
+estado varchar(2),
+votos int DEFAULT 0
+)
+
+
+create table prefeito(
+idPrefeito INT not null AUTO_INCREMENT,
+PRIMARY KEY (idPrefeito),
+cargoPolitico varchar(50),
+numero int not null,
+nome varchar(80) not null ,
+estado varchar(2),
+votos int DEFAULT 0
+)
+
+create table vereador(
+idVereador INT not null AUTO_INCREMENT,
+PRIMARY KEY (idVereador),
+cargoPolitico varchar(50),
+numero int not null,
+nome varchar(80) not null ,
+estado varchar(2),
+votos int DEFAULT 0
+)
