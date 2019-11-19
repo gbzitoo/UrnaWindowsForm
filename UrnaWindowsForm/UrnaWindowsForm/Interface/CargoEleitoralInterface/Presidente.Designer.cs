@@ -45,7 +45,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(383, 191);
+            this.label1.Location = new System.Drawing.Point(187, 223);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 13);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(383, 228);
+            this.label2.Location = new System.Drawing.Point(187, 260);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 13);
             this.label2.TabIndex = 1;
@@ -62,21 +62,21 @@
             // 
             // txtNumPresidente
             // 
-            this.txtNumPresidente.Location = new System.Drawing.Point(494, 188);
+            this.txtNumPresidente.Location = new System.Drawing.Point(298, 220);
             this.txtNumPresidente.Name = "txtNumPresidente";
             this.txtNumPresidente.Size = new System.Drawing.Size(100, 20);
             this.txtNumPresidente.TabIndex = 3;
             // 
             // txtNomePresidente
             // 
-            this.txtNomePresidente.Location = new System.Drawing.Point(494, 225);
+            this.txtNomePresidente.Location = new System.Drawing.Point(298, 257);
             this.txtNomePresidente.Name = "txtNomePresidente";
             this.txtNomePresidente.Size = new System.Drawing.Size(100, 20);
             this.txtNomePresidente.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(487, 99);
+            this.button1.Location = new System.Drawing.Point(291, 131);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -86,7 +86,7 @@
             // 
             // txtNumBuscaPresidente
             // 
-            this.txtNumBuscaPresidente.Location = new System.Drawing.Point(411, 101);
+            this.txtNumBuscaPresidente.Location = new System.Drawing.Point(215, 133);
             this.txtNumBuscaPresidente.Name = "txtNumBuscaPresidente";
             this.txtNumBuscaPresidente.Size = new System.Drawing.Size(55, 20);
             this.txtNumBuscaPresidente.TabIndex = 8;
@@ -95,7 +95,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(229, 101);
+            this.label4.Location = new System.Drawing.Point(33, 133);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(185, 20);
             this.label4.TabIndex = 7;
@@ -105,7 +105,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(382, 148);
+            this.label5.Location = new System.Drawing.Point(186, 180);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(231, 20);
             this.label5.TabIndex = 9;
@@ -114,18 +114,18 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(348, 284);
+            this.button2.Location = new System.Drawing.Point(152, 316);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 31);
             this.button2.TabIndex = 10;
-            this.button2.Text = "Votar";
+            this.button2.Text = "Confirmar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UrnaWindowsForm.Properties.Resources.candidata;
-            this.pictureBox1.Location = new System.Drawing.Point(233, 148);
+            this.pictureBox1.Location = new System.Drawing.Point(37, 180);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(141, 97);
             this.pictureBox1.TabIndex = 11;
@@ -135,7 +135,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(263, 38);
+            this.label3.Location = new System.Drawing.Point(67, 70);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(300, 29);
             this.label3.TabIndex = 23;

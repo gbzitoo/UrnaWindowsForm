@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Cargos\CargoEnum.cs" />
     <Compile Include="Cargos\Retorno.cs" />
+    <Compile Include="Cidade\ConsultaCidade.cs" />
     <Compile Include="Conexao\ConexaoMySql.cs" />
     <Compile Include="Consultas\DeputadoEstadual.cs" />
     <Compile Include="Consultas\DeputadoFederal.cs" />
@@ -230,6 +231,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Imagem\candidata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\linha-preta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagem\teste.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

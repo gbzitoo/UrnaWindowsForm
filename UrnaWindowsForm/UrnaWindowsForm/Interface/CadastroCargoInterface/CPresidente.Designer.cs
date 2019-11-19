@@ -39,7 +39,7 @@
             // bntCadastrarPresidente
             // 
             this.bntCadastrarPresidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntCadastrarPresidente.Location = new System.Drawing.Point(341, 301);
+            this.bntCadastrarPresidente.Location = new System.Drawing.Point(166, 280);
             this.bntCadastrarPresidente.Name = "bntCadastrarPresidente";
             this.bntCadastrarPresidente.Size = new System.Drawing.Size(111, 36);
             this.bntCadastrarPresidente.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(201, 226);
+            this.label1.Location = new System.Drawing.Point(36, 232);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(177, 20);
             this.label1.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(201, 176);
+            this.label2.Location = new System.Drawing.Point(36, 182);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(193, 20);
             this.label2.TabIndex = 2;
@@ -71,7 +71,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(197, 66);
+            this.label3.Location = new System.Drawing.Point(33, 94);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(444, 42);
             this.label3.TabIndex = 3;
@@ -79,16 +79,16 @@
             // 
             // txtNumPresidente
             // 
-            this.txtNumPresidente.Location = new System.Drawing.Point(390, 178);
+            this.txtNumPresidente.Location = new System.Drawing.Point(225, 184);
             this.txtNumPresidente.Name = "txtNumPresidente";
             this.txtNumPresidente.Size = new System.Drawing.Size(62, 20);
             this.txtNumPresidente.TabIndex = 4;
             // 
             // txtNomePresidente
             // 
-            this.txtNomePresidente.Location = new System.Drawing.Point(374, 228);
+            this.txtNomePresidente.Location = new System.Drawing.Point(209, 234);
             this.txtNomePresidente.Name = "txtNomePresidente";
-            this.txtNomePresidente.Size = new System.Drawing.Size(267, 20);
+            this.txtNomePresidente.Size = new System.Drawing.Size(212, 20);
             this.txtNomePresidente.TabIndex = 5;
             // 
             // CPresidente

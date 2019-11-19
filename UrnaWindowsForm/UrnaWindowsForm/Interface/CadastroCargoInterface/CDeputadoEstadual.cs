@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UrnaWindowsForm.Cidade;
 using UrnaWindowsForm.Consultas;
 using UrnaWindowsForm.Funcoes;
 
@@ -24,6 +25,13 @@ namespace UrnaWindowsForm.Interface.CadastroCargoInterface
             Inserir inserir = new Inserir();
             DeputadoEstadual deputadoEstadual = new DeputadoEstadual();
             inserir.Cadastrar(5, Convert.ToInt32(txtNumDeputadoEstadual.Text), txtNomeDeputadoEstadual.Text, ComboBox.SelectedItem.ToString(),deputadoEstadual.ConsultaDeputadoEstadual());
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            ConsultaCidade conCidade = new ConsultaCidade();
+
+            //MessageBox.Show(conCidade.ResultadoSigla(textBox1.Text).ToString());
         }
     }
 }

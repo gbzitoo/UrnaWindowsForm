@@ -45,11 +45,11 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(330, 292);
+            this.button2.Location = new System.Drawing.Point(149, 317);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 31);
             this.button2.TabIndex = 20;
-            this.button2.Text = "Votar";
+            this.button2.Text = "Confirmar";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
@@ -57,7 +57,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(364, 156);
+            this.label5.Location = new System.Drawing.Point(183, 181);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(231, 20);
             this.label5.TabIndex = 19;
@@ -65,7 +65,7 @@
             // 
             // txtNumBuscaGovernador
             // 
-            this.txtNumBuscaGovernador.Location = new System.Drawing.Point(393, 109);
+            this.txtNumBuscaGovernador.Location = new System.Drawing.Point(212, 134);
             this.txtNumBuscaGovernador.Name = "txtNumBuscaGovernador";
             this.txtNumBuscaGovernador.Size = new System.Drawing.Size(55, 20);
             this.txtNumBuscaGovernador.TabIndex = 18;
@@ -74,7 +74,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(211, 109);
+            this.label4.Location = new System.Drawing.Point(30, 134);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(185, 20);
             this.label4.TabIndex = 17;
@@ -82,7 +82,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(469, 107);
+            this.button1.Location = new System.Drawing.Point(288, 132);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 16;
@@ -92,14 +92,14 @@
             // 
             // txtNomeGovernador
             // 
-            this.txtNomeGovernador.Location = new System.Drawing.Point(476, 233);
+            this.txtNomeGovernador.Location = new System.Drawing.Point(295, 258);
             this.txtNomeGovernador.Name = "txtNomeGovernador";
             this.txtNomeGovernador.Size = new System.Drawing.Size(100, 20);
             this.txtNomeGovernador.TabIndex = 15;
             // 
             // txtNumGovernador
             // 
-            this.txtNumGovernador.Location = new System.Drawing.Point(476, 196);
+            this.txtNumGovernador.Location = new System.Drawing.Point(295, 221);
             this.txtNumGovernador.Name = "txtNumGovernador";
             this.txtNumGovernador.Size = new System.Drawing.Size(100, 20);
             this.txtNumGovernador.TabIndex = 14;
@@ -107,7 +107,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(365, 236);
+            this.label2.Location = new System.Drawing.Point(184, 261);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 13);
             this.label2.TabIndex = 13;
@@ -116,7 +116,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(365, 199);
+            this.label1.Location = new System.Drawing.Point(184, 224);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 13);
             this.label1.TabIndex = 12;
@@ -126,7 +126,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(266, 42);
+            this.label3.Location = new System.Drawing.Point(85, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(310, 29);
             this.label3.TabIndex = 22;
@@ -135,7 +135,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::UrnaWindowsForm.Properties.Resources.candidata;
-            this.pictureBox1.Location = new System.Drawing.Point(215, 156);
+            this.pictureBox1.Location = new System.Drawing.Point(34, 181);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(141, 97);
             this.pictureBox1.TabIndex = 21;

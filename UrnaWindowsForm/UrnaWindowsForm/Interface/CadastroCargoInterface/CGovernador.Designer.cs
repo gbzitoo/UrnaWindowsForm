@@ -40,23 +40,23 @@
             // 
             // txtNomeGovernador
             // 
-            this.txtNomeGovernador.Location = new System.Drawing.Point(355, 252);
+            this.txtNomeGovernador.Location = new System.Drawing.Point(212, 219);
             this.txtNomeGovernador.Name = "txtNomeGovernador";
-            this.txtNomeGovernador.Size = new System.Drawing.Size(267, 20);
+            this.txtNomeGovernador.Size = new System.Drawing.Size(222, 20);
             this.txtNomeGovernador.TabIndex = 11;
             // 
             // txtNumGovernador
             // 
-            this.txtNumGovernador.Location = new System.Drawing.Point(371, 202);
+            this.txtNumGovernador.Location = new System.Drawing.Point(228, 169);
             this.txtNumGovernador.Name = "txtNumGovernador";
-            this.txtNumGovernador.Size = new System.Drawing.Size(62, 20);
+            this.txtNumGovernador.Size = new System.Drawing.Size(51, 20);
             this.txtNumGovernador.TabIndex = 10;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(178, 90);
+            this.label3.Location = new System.Drawing.Point(22, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(463, 42);
             this.label3.TabIndex = 9;
@@ -66,7 +66,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(182, 200);
+            this.label2.Location = new System.Drawing.Point(39, 167);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(193, 20);
             this.label2.TabIndex = 8;
@@ -76,7 +76,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(182, 250);
+            this.label1.Location = new System.Drawing.Point(39, 217);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(177, 20);
             this.label1.TabIndex = 7;
@@ -85,9 +85,9 @@
             // bntCadastrarPresidente
             // 
             this.bntCadastrarPresidente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bntCadastrarPresidente.Location = new System.Drawing.Point(345, 359);
+            this.bntCadastrarPresidente.Location = new System.Drawing.Point(202, 308);
             this.bntCadastrarPresidente.Name = "bntCadastrarPresidente";
-            this.bntCadastrarPresidente.Size = new System.Drawing.Size(111, 36);
+            this.bntCadastrarPresidente.Size = new System.Drawing.Size(100, 36);
             this.bntCadastrarPresidente.TabIndex = 6;
             this.bntCadastrarPresidente.Text = "Cadastrar";
             this.bntCadastrarPresidente.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@
             "GO",
             "MS",
             "DF"});
-            this.ComboBox.Location = new System.Drawing.Point(264, 304);
+            this.ComboBox.Location = new System.Drawing.Point(122, 261);
             this.ComboBox.Name = "ComboBox";
-            this.ComboBox.Size = new System.Drawing.Size(121, 21);
+            this.ComboBox.Size = new System.Drawing.Size(110, 21);
             this.ComboBox.TabIndex = 12;
             this.ComboBox.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
@@ -118,7 +118,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(182, 302);
+            this.label4.Location = new System.Drawing.Point(40, 259);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 20);
             this.label4.TabIndex = 13;
