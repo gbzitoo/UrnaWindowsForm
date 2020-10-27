@@ -121,11 +121,13 @@ namespace UrnaWindowsForm.Cidade
                 cidades[90] = "Cabo Frio";
                 cidades[91] = "Cabo Frio";
                 cidades[92] = "Cabo Frio";
+
+                foreach (var item in cidades)
+                {
+                    RecebeCidades += item;
+                }
             }
-            foreach (var item in cidades)
-            {
-                RecebeCidades += item;
-            }
+         
 
 
             // Cidades de são paulo.
@@ -136,11 +138,13 @@ namespace UrnaWindowsForm.Cidade
                 cidades[2] = "Araruama\n";
                 cidades[3] = "Areal\n";
                 cidades[4] = "Armação de Búzios\n";
+
+                foreach (var item in cidades)
+                {
+                    RecebeCidades += item;
+                }
             }
-            foreach (var item in cidades)
-            {
-                RecebeCidades += item;
-            }
+           
 
 
             return RecebeCidades;
