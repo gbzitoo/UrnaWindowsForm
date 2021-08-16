@@ -15,8 +15,8 @@ namespace UrnaWindowsForm.Interface.CadastroCargoInterface
 
         private void BntCadastrarPresidente_Click(object sender, EventArgs e)
         {
-            Inserir inserir = new Inserir();
-            Prefeito prefeito = new Prefeito();
+            var inserir = new Inserir();
+            var prefeito = new Prefeito();
             inserir.Cadastrar(6, Convert.ToInt32(txtNumPrefeito.Text), txtNomePrefeito.Text, ComboBox.SelectedItem.ToString(), prefeito.ConsultaPrefeito());
         }
 
@@ -26,10 +26,10 @@ namespace UrnaWindowsForm.Interface.CadastroCargoInterface
 
         private void ComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ConsultaCidade conCidade = new ConsultaCidade();
+            var conCidade = new ConsultaCidade();
             if (ComboBox.SelectedItem.ToString() == "RJ")
             {
-                String[] items = new String[] { conCidade.ResultadoSigla(ComboBox.SelectedItem.ToString()) };
+                var items = conCidade.ResultadoSigla(ComboBox.SelectedItem.ToString());
                 foreach (var item in items)
                 {
                     comboBox1.Items.Add(item.ToString());

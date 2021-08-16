@@ -1,9 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace UrnaWindowsForm.Funcoes
@@ -18,7 +14,7 @@ namespace UrnaWindowsForm.Funcoes
         {
 
             sqlcon = new MySql.Data.MySqlClient.MySqlConnection(c.Conn());
-            MySqlCommand comando2 = new MySqlCommand(ConsultaVotando, sqlcon);
+            var comando2 = new MySqlCommand(ConsultaVotando, sqlcon);
             comando2.Parameters.Add("@numero", MySqlDbType.Int32).Value = numero;
             comando2.Parameters.Add("@votos", MySqlDbType.Int32).Value = votos;
 
@@ -26,7 +22,7 @@ namespace UrnaWindowsForm.Funcoes
             try
             {
                 sqlcon.Open();
-                MySqlDataReader dr2 = comando2.ExecuteReader();
+                var dr2 = comando2.ExecuteReader();
 
                 dr2.Read();
                 MessageBox.Show("Voto cadastrado com sucesso.");

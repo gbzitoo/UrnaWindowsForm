@@ -1,17 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UrnaWindowsForm.Cidade
 {
     public class ConsultaCidade
     {
-        public String RecebeCidades { get; set; }
+        public String[] RecebeCidades { get; set; }
         public int ValorEstado = 0;
 
-        public string ResultadoSigla(string sigla)
+        public override String ToString()
+        {
+            var items = " ";
+            foreach (var item in RecebeCidades)
+            {
+                items = $"{items}, {item}";
+            }
+            return items;
+        }
+        public String[] ResultadoSigla(string sigla)
         {
            //Verificando qual estado é e adicionando a quantidade de cidades no array.
             if (sigla == "RJ")
@@ -24,7 +29,7 @@ namespace UrnaWindowsForm.Cidade
                 ValorEstado = 5;
             }
 
-            String[] cidades = new string[ValorEstado];
+            var cidades = new string[ValorEstado];
 
             // Cidades do Rio de Janeiro.
             if (sigla == "RJ")
@@ -40,6 +45,7 @@ namespace UrnaWindowsForm.Cidade
                 cidades[8] = "Belford Roxo";
                 cidades[9] = "Bom Jardim";
                 cidades[10] = "Bom Jesus do Itabapoana";
+                cidades[11] = "Cabo Frio";
                 cidades[12] = "Cabo Frio";
                 cidades[13] = "Cabo Frio";
                 cidades[14] = "Cabo Frio";
@@ -122,10 +128,7 @@ namespace UrnaWindowsForm.Cidade
                 cidades[91] = "Cabo Frio";
                 cidades[92] = "Cabo Frio";
 
-                foreach (var item in cidades)
-                {
-                    RecebeCidades += item;
-                }
+                RecebeCidades = cidades;
             }
          
 
@@ -133,16 +136,13 @@ namespace UrnaWindowsForm.Cidade
             // Cidades de são paulo.
             if (sigla == "SP")
             {
-                cidades[0] = "Angra dos Reis\n";
-                cidades[1] = "Aperibé\n";
-                cidades[2] = "Araruama\n";
-                cidades[3] = "Areal\n";
-                cidades[4] = "Armação de Búzios\n";
+                cidades[0] = "São Paulo";
+                cidades[1] = "Santos";
+                cidades[2] = "Campinas";
+                cidades[3] = "Guarujá";
+                cidades[4] = "Indaiatuba";
 
-                foreach (var item in cidades)
-                {
-                    RecebeCidades += item;
-                }
+                RecebeCidades = cidades;
             }
            
 
