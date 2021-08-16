@@ -1,9 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using UrnaWindowsForm.Conexao;
 
@@ -23,7 +19,7 @@ namespace UrnaWindowsForm.Funcoes
         {
 
             sqlcon = new MySql.Data.MySqlClient.MySqlConnection(c.Conn());
-            MySqlCommand comando = new MySqlCommand(ConsultaProcurar, sqlcon);
+            var comando = new MySqlCommand(ConsultaProcurar, sqlcon);
 
             comando.Parameters.Add("@numero", MySqlDbType.Int32).Value = Numero;
 
@@ -38,7 +34,7 @@ namespace UrnaWindowsForm.Funcoes
 
 
                 sqlcon.Open();
-                MySqlDataReader dr = comando.ExecuteReader();
+                var dr = comando.ExecuteReader();
 
                 //Verifica se tem o id passado na tabela.
                 if (dr.HasRows == false)

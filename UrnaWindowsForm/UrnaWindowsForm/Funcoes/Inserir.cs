@@ -1,12 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using UrnaWindowsForm.Cargos;
-using UrnaWindowsForm.Consultas;
 
 namespace UrnaWindowsForm.Funcoes
 {
@@ -23,7 +18,7 @@ namespace UrnaWindowsForm.Funcoes
         {
 
             sqlcon = new MySql.Data.MySqlClient.MySqlConnection(c.Conn());
-            MySqlCommand comando = new MySqlCommand(Consulta, sqlcon);
+            var comando = new MySqlCommand(Consulta, sqlcon);
 
             comando.Parameters.Add("@cargoPolitico", MySqlDbType.VarChar).Value = r.recebe(cargoPolitico);
             comando.Parameters.Add("@numero", MySqlDbType.Int32).Value = numero;

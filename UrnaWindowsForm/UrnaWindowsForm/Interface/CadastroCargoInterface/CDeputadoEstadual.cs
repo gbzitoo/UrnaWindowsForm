@@ -22,14 +22,14 @@ namespace UrnaWindowsForm.Interface.CadastroCargoInterface
 
         private void BntCadastrarPresidente_Click(object sender, EventArgs e)
         {
-            Inserir inserir = new Inserir();
-            DeputadoEstadual deputadoEstadual = new DeputadoEstadual();
+            var inserir = new Inserir();
+            var deputadoEstadual = new DeputadoEstadual();
             inserir.Cadastrar(5, Convert.ToInt32(txtNumDeputadoEstadual.Text), txtNomeDeputadoEstadual.Text, ComboBox.SelectedItem.ToString(),deputadoEstadual.ConsultaDeputadoEstadual());
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            ConsultaCidade conCidade = new ConsultaCidade();
+            var conCidade = new ConsultaCidade();
 
             //MessageBox.Show(conCidade.ResultadoSigla(textBox1.Text).ToString());
         }
